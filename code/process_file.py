@@ -31,9 +31,14 @@ if uploaded_file:
             # Display parsed package info in Streamlit
             st.info(f"📦 {line} ➡️ **Total Size:** {total} {unit}")
 
+    
+    output_dir = "./data"
+    os.makedirs(output_dir, exist_ok=True)
+
+    
     output_path = os.path.join(output_dir, json_filename)
     with open(output_path, "w") as json_file:
         json.dump(packages, json_file, indent=4)
 
-    
+    # Success message
     st.success(f"✅ {len(packages)} packages saved to `{json_filename}`", icon="💾")
