@@ -23,3 +23,4 @@ Examples:
 
 `--- Reflection Below This Line ---`
 
+This was a hard assignment, and I needed to get help from different sources. I eventually got what I could, but I will keep working on this in the future to get better.
